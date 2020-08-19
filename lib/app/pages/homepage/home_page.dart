@@ -11,8 +11,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarstyled(
-        title: "Home",
+        title: "Tela Inicial",
       ),
+      // appBar: AppBarstyled(
+      //   title: "Home",
+      // ),
       body: Center(
         child: Text("Inicio"),
       ),
