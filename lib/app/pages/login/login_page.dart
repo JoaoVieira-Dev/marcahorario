@@ -9,15 +9,34 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Form(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextFormField(
-              textAlign: TextAlign.center,
-            )
-          ],
-        ),
+      body: Container(
+        padding: EdgeInsets.all(40),
+        child: Form(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget> [
+              SizedBox(
+                width: 50,
+                height: 50,
+                child: Icon(Icons.access_time),
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: "E-mail"
+                  )
+                ),
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: "Password"
+                ),
+              ),
+              RaisedButton(
+                onPressed: () {},
+                color: Colors.lightBlue,
+                child: Text("Login"),
+                )
+            ],
+        ),),
       ),
     );
   }
