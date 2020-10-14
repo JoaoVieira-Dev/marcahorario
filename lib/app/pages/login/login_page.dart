@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marcahorario/app/constants.dart';
 import 'package:marcahorario/app/pages/homepage/home_page.dart';
 import 'package:marcahorario/app/pages/registerpage/register_page.dart';
 
@@ -54,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                                     builder: (context) => HomePage()));
                           }
                         },
-                        color: Colors.lightBlue[800],
+                        color: kPrimaryColor,
                         child: Text(
                           "Login",
                           style: TextStyle(color: Colors.white),
@@ -98,7 +99,7 @@ class Logotipo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image(
-      image: AssetImage('lib/app/assets/logo.png'),
+      image: AssetImage('lib/app/assets/icons/logo.png'),
       width: 100,
     );
   }
